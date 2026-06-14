@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="InShot_20231208_122457085 (1).jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Islamic Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<head>
+  <!-- Font Awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+
+<body>
+<div class="mode-box" style="margin-bottom:15px; text-align:center;">
+  <label style="font-size:18px; font-weight:bold;">Select Mode: </label>
+  <select id="modeSelect" style="padding:6px; font-size:26px; border-radius:8px;">
+    <option value="simple">Simple</option>
+    <option value="normal">Normal (locked)</option>
+    <option value="hard">Hard (locked)</option>
+  </select>
+</div>
+<div id="timer" style="font-size: 25px; font-weight: bold; color: red; text-align:center; display:none;">
+  Time: 60s
+</div>
+
+<div id="gameOver" style="display:none; font-size:22px; text-align:center; color:red;">
+  ⛔ Time is up! Game Over.
+   <button id="againStartBtn" style="padding:10px 20px; font-size:18px;">
+        Start Again
+    </button>
+</div>
+
+
+
+
+  <!-- START SCREEN -->
+  <div id="startScreen" class="card start-screen">
+    <img src="InShot_20231208_122457085 (1).jpg" alt="Start Quiz" class="start-img" />
+    <button id="startBtn" class="btn" style="margin-top:15px;">Start Quiz</button>
+  </div>
+
+  <!-- QUIZ CARD -->
+  <div id="quizCard" class="card hidden">
+    <div class="progress"><div id="progressBar"></div></div>
+
+    <div id="qIndex" class="muted">Question 1/1</div>
+    <div id="question" class="question">Loading…</div>
+    <div id="explanation" style="display: none; margin-top: 10px; color: green;"></div>
+
+    <div id="choices" class="choices"></div>
+
+    <div class="controls">
+      <button id="nextBtn" class="btn" >Next</button>
+      <button id="restartBtn" class="btn-ghost">Restart</button>
+    </div>
+  </div>
+
+  <!-- RESULT CARD -->
+  <div id="resultCard" class="card hidden">
+    <h2>Quiz Result</h2>
+    <p>Your Score: <strong id="score">0</strong></p>
+    <p>Total Questions: <span id="total">0</span></p>
+    <p>Correct: <span id="correct">0</span> — Wrong: <span id="wrong">0</span></p>
+    <button id="playAgain" class="btn" style="margin-top:12px;">Play Again</button>
+  </div>
+  <p>VisIt my channel For more islamic knowledge</p>
+  <p>Your mind grows stronger every time you learn something new</p>
+  <div class="center-btn"><a href="https://www.youtube.com/@Acquiring-of-Knowledge" target="_blank">
+    <button style="padding: 10px 20px; font-size: 18px; background: red; color: white; border: 3px solid black; cursor: pointer; border-radius: 50px; display: inline-block;">Visit My Youtube Channel</button></div>
+</a>
+<footer class="creator">Acquiring of Knowledge &#169 2025 ALL RIGHTS RESERVED</footer>
+<footer class="creator">Created by Mushtaq and Ubaid</footer>
+<footer>
+  <div class="social-icons">
+  <a href="https://www.youtube.com/@Acquiring-of-Knowledge" target="_blank">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="facebook.com/share/15zXMX4WTY" target="_blank">
+    <i class="fab fa-facebook"></i>
+  </a>
+</div>
+
+</footer>
+
+  <script src="app (2)/app.js"> </script>
+</body>
+</html>
